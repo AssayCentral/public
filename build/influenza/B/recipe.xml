@@ -1,0 +1,35 @@
+<Assay>
+    <Title>Influenza B</Title>
+    <Description>Influenza B virus</Description>
+
+    <Tag>Influenza</Tag>
+
+    <Provenance>
+        <TargetName>Influenza B virus</TargetName>
+        <TargetURI>https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL613129</TargetURI>
+        <OrganismName>Influenza B virus</OrganismName>
+        <OrganismURI>https://www.uniprot.org/taxonomy/11520</OrganismURI>
+        <TargetTypeName>Virus</TargetTypeName>
+        <TargetTypeURI></TargetTypeURI>
+        <CellName></CellName>
+        <CellURI></CellURI>
+        <AssayTypeName>Functional</AssayTypeName>
+        <AssayTypeURI></AssayTypeURI>
+        <AssayDescription></AssayDescription>
+        <SourceName></SourceName>
+        <SourceURI></SourceURI>
+        <SourceVersion></SourceVersion>
+        <DocumentName></DocumentName>
+        <DocumentURI></DocumentURI>
+    </Provenance>
+    
+    <Input src="../chembl23/InfluenzaBvirus-InfluenzaBvirus-O-F-CHEMBL613129-Functional-K.ds" skipCheck="true">
+        <Workflow src="workflow/stdclean.workflow"/>
+    </Input>
+    
+    <Output>
+        <Threshold/>
+        <ResponseType>target</ResponseType>
+    </Output>
+    
+</Assay>

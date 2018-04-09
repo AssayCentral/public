@@ -1,0 +1,38 @@
+<Assay>
+    <Title>Influenza A (H1N1)</Title>
+    <Description>Influenza A virus (H1N1)</Description>
+
+    <Tag>Influenza</Tag>
+
+    <Provenance>
+        <TargetName>Influenza A virus (H1N1)</TargetName>
+        <TargetURI>https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL612610</TargetURI>
+        <OrganismName>Influenza A virus</OrganismName>
+        <OrganismURI>https://www.uniprot.org/taxonomy/114727</OrganismURI>
+        <TargetTypeName>Virus</TargetTypeName>
+        <TargetTypeURI></TargetTypeURI>
+        <CellName></CellName>
+        <CellURI></CellURI>
+        <AssayTypeName>Functional</AssayTypeName>
+        <AssayTypeURI></AssayTypeURI>
+        <AssayDescription></AssayDescription>
+        <SourceName></SourceName>
+        <SourceURI></SourceURI>
+        <SourceVersion></SourceVersion>
+        <DocumentName></DocumentName>
+        <DocumentURI></DocumentURI>
+    </Provenance>
+    
+    <Input src="../chembl23/InfluenzaAvirus_A_PR_8_34_H1N1__-InfluenzaAvirus_A_PuertoRico_8_1934_H1N1__-O-F-CHEMBL612610-Functional-K.ds" skipCheck="true">
+        <Workflow src="workflow/stdclean.workflow"/>
+    </Input>
+    <Input src="doi-10.1016-j-bmcl-2017-06-074.ds">
+        <Workflow src="workflow/stdclean.workflow"/>
+    </Input>
+
+    <Output>
+        <Threshold/>
+        <ResponseType>target</ResponseType>
+    </Output>
+    
+</Assay>
