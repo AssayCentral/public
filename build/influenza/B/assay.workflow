@@ -119,7 +119,7 @@
         </Node>
         <Node id="10" name="MultiplexOutput" op="com.mmi.work.op.blk.Multiplex">
             <Input id="7" port="1"/>
-            <Outputs count="4"/>
+            <Outputs count="5"/>
         </Node>
         <Node id="11" name="WriteOutput" op="com.mmi.work.op.io.WriteDataSheet">
             <Parameters>
@@ -157,11 +157,18 @@
             </Parameters>
             <Outputs count="0"/>
         </Node>
-        <Node id="15" name="DiscardRows" op="com.mmi.work.op.io.Sink">
+        <Node id="15" name="DomainApplicability" op="com.mmi.assaycentral.build.op.CalculateDomainApplicability">
+            <Parameters>
+                <Parameter name="filename">../../domain.ecfp</Parameter>
+            </Parameters>
             <Input id="10" port="4"/>
+            <Outputs count="0"/>
+        </Node>
+        <Node id="16" name="DiscardRows" op="com.mmi.work.op.io.Sink">
+            <Input id="10" port="5"/>
             <Outputs count="1"/>
         </Node>
-        <Node id="16" name="WriteSummary" op="com.mmi.assaycentral.build.op.CaptureBrochureSummary">
+        <Node id="17" name="WriteSummary" op="com.mmi.assaycentral.build.op.CaptureBrochureSummary">
             <Parameters>
                 <Parameter name="filename">summary.json</Parameter>
                 <Parameter name="model" nodeID="13" resultName="model"/>
@@ -172,8 +179,9 @@
                     <s>Influenza</s>
                 </Parameter>
                 <Parameter name="responseType">target</Parameter>
+                <Parameter name="domainCompat" nodeID="15" resultName="domain"/>
             </Parameters>
-            <Input id="15" port="1"/>
+            <Input id="16" port="1"/>
             <Outputs count="0"/>
         </Node>
     </Nodes>

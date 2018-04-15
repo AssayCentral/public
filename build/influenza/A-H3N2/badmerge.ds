@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+<DataSheet>
+<Summary>
+<Title>Influenza A (H3N2)</Title>
+<Description><![CDATA[Influenza A virus (H3N2)]]></Description></Summary>
+<Extension><Ext type="org.mmi.aspect.AssayProvenance" name="AssayProvenance"><![CDATA[pfx:mol=http://rdf.ebi.ac.uk/resource/chembl/molecule/
+targetName=Influenza\0020A\0020virus\0020(H3N2)
+targetURI=https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL2366902
+offTarget=false
+organismName=Influenza\0020A\0020virus
+organismURI=https://www.uniprot.org/taxonomy/119210
+targetTypeName=Virus
+targetTypeURI=
+cellName=
+cellURI=
+assayTypeName=Functional
+assayTypeURI=
+assayDescription=
+sourceName=ChEMBL
+sourceURI=http://www.ebi.ac.uk/rdf
+sourceVersion=23
+documentName=Structure-based\0020optimization\0020and\0020synthesis\0020of\0020antiviral\0020drug\0020Arbidol\0020analogues\0020with\0020significantly\0020improved\0020affinity\0020to\0020influenza\0020hemagglutinin
+documentURI=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5575851/
+measureTypeName=Ki/Kd
+measureTypeURI=
+unit:uM=http://purl.obolibrary.org/obo/UO_0000064
+unit:M=http://purl.obolibrary.org/obo/UO_0000062
+unit:mM=http://purl.obolibrary.org/obo/UO_0000063
+unit:nM=http://purl.obolibrary.org/obo/UO_0000065
+]]></Ext>
+</Extension>
+<Header ncols="14">
+<Column id="1" name="Molecule" type="molecule">Molecular structure of compound being measured</Column>
+<Column id="2" name="Name" type="string">Name of compound</Column>
+<Column id="3" name="Value" type="real">Measured value</Column>
+<Column id="4" name="Error" type="real">Experimental error of measurement</Column>
+<Column id="5" name="Units" type="string">Units of measurement</Column>
+<Column id="6" name="Relation" type="string">Relation: exact, greater or less</Column>
+<Column id="7" name="SourceURI" type="string">Source identifier for activity measurement</Column>
+<Column id="8" name="_original_src" type="integer">Original file index (1-based)</Column>
+<Column id="9" name="_original_row" type="integer">Original row index (1-based)</Column>
+<Column id="10" name="_priority" type="integer">Assimilation priority</Column>
+<Column id="11" name="HeavyHash" type="string">Molecular hash code, with just heavy atoms.</Column>
+<Column id="12" name="Reason" type="string">Failure to merge</Column>
+<Column id="13" name="Group" type="integer">Failure group</Column>
+<Column id="14" name="SourceFile" type="string"></Column></Header>
+<Content>
+<Row id="1">
+<Cell id="1"><![CDATA[SketchEl!(22,22)
+O=2.5422,-3.9697;0,0,i0
+O=6.4535,-0.2356;0,0,i0
+O=5.1450,2.0129;0,0,i0
+O=-1.3416,-0.2220;0,0,i0
+N=-0.0334,-2.4705;0,0,i1
+N=-0.0334,0.5411;0,0,i2
+C=1.2749,-1.7210;0,0,i1
+C=2.5831,-2.4843;0,0,i1
+C=1.2749,-0.2220;0,0,i1
+C=3.8506,-0.2220;0,0,i0
+C=3.8506,-1.7210;0,0,i1
+C=2.5831,0.5139;0,0,i2
+C=5.1450,0.5139;0,0,i0
+C=1.2749,-4.7054;0,0,i1
+C=-1.3416,-1.7210;0,0,i0
+C=1.2749,-6.2182;0,0,i2
+C=-0.0334,-3.9559;0,0,i2
+C=7.7617,0.5139;0,0,i2
+C=-2.6226,-2.4705;0,0,i3
+C=-0.0470,-6.9405;0,0,i3
+C=-1.3416,-4.6918;0,0,i3
+C=9.0427,-0.2356;0,0,i3
+8-1=1,1
+1-14=1,0
+2-13=1,0
+2-18=1,0
+3-13=2,0
+4-15=2,0
+7-5=1,2
+5-15=1,0
+9-6=1,1
+7-8=1,0
+7-9=1,0
+8-11=1,0
+9-12=1,0
+10-11=2,0
+10-12=1,0
+10-13=1,0
+14-16=1,0
+14-17=1,0
+15-19=1,0
+16-20=1,0
+17-21=1,0
+18-22=1,0
+!End
+]]></Cell>
+<Cell id="2"><![CDATA[]]></Cell>
+<Cell id="3">80000.0</Cell>
+<Cell id="4"/>
+<Cell id="5"><![CDATA[nM]]></Cell>
+<Cell id="6"><![CDATA[>]]></Cell>
+<Cell id="7"><![CDATA[mol:CHEMBL1229]]></Cell>
+<Cell id="8">1</Cell>
+<Cell id="9">5</Cell>
+<Cell id="10">0</Cell>
+<Cell id="11"><![CDATA[CCC1CC.CCOC2C3CC4C5C6C3.CC3N5.N4.O3.O2.O16]]></Cell>
+<Cell id="12"/>
+<Cell id="13">1</Cell>
+<Cell id="14"><![CDATA[../chembl23/InfluenzaAvirusH3N2-InfluenzaAvirusH3N2-O-F-CHEMBL2366902-Functional-K.ds]]></Cell></Row>
+<Row id="2">
+<Cell id="1"><![CDATA[SketchEl!(22,22)
+O=2.5422,-3.9697;0,0,i0
+O=6.4535,-0.2356;0,0,i0
+O=5.1450,2.0129;0,0,i0
+O=-1.3416,-0.2220;0,0,i0
+N=-0.0334,-2.4705;0,0,i1
+N=-0.0334,0.5411;0,0,i2
+C=1.2749,-1.7210;0,0,i1
+C=2.5831,-2.4843;0,0,i1
+C=1.2749,-0.2220;0,0,i1
+C=3.8506,-0.2220;0,0,i0
+C=3.8506,-1.7210;0,0,i1
+C=2.5831,0.5139;0,0,i2
+C=5.1450,0.5139;0,0,i0
+C=1.2749,-4.7054;0,0,i1
+C=-1.3416,-1.7210;0,0,i0
+C=1.2749,-6.2182;0,0,i2
+C=-0.0334,-3.9559;0,0,i2
+C=7.7617,0.5139;0,0,i2
+C=-2.6226,-2.4705;0,0,i3
+C=-0.0470,-6.9405;0,0,i3
+C=-1.3416,-4.6918;0,0,i3
+C=9.0427,-0.2356;0,0,i3
+8-1=1,1
+1-14=1,0
+2-13=1,0
+2-18=1,0
+3-13=2,0
+4-15=2,0
+7-5=1,2
+5-15=1,0
+9-6=1,1
+7-8=1,0
+7-9=1,0
+8-11=1,0
+9-12=1,0
+10-11=2,0
+10-12=1,0
+10-13=1,0
+14-16=1,0
+14-17=1,0
+15-19=1,0
+16-20=1,0
+17-21=1,0
+18-22=1,0
+!End
+]]></Cell>
+<Cell id="2"><![CDATA[]]></Cell>
+<Cell id="3">1300.0</Cell>
+<Cell id="4"/>
+<Cell id="5"><![CDATA[nM]]></Cell>
+<Cell id="6"><![CDATA[=]]></Cell>
+<Cell id="7"><![CDATA[mol:CHEMBL1229]]></Cell>
+<Cell id="8">1</Cell>
+<Cell id="9">6</Cell>
+<Cell id="10">0</Cell>
+<Cell id="11"><![CDATA[CCC1CC.CCOC2C3CC4C5C6C3.CC3N5.N4.O3.O2.O16]]></Cell>
+<Cell id="12"/>
+<Cell id="13">1</Cell>
+<Cell id="14"><![CDATA[../chembl23/InfluenzaAvirusH3N2-InfluenzaAvirusH3N2-O-F-CHEMBL2366902-Functional-K.ds]]></Cell></Row>
+<Row id="3">
+<Cell id="1"><![CDATA[SketchEl!(22,22)
+O=2.5422,-3.9697;0,0,i0
+O=6.4535,-0.2356;0,0,i0
+O=5.1450,2.0129;0,0,i0
+O=-1.3416,-0.2220;0,0,i0
+N=-0.0334,-2.4705;0,0,i1
+N=-0.0334,0.5411;0,0,i2
+C=1.2749,-1.7210;0,0,i1
+C=2.5831,-2.4843;0,0,i1
+C=1.2749,-0.2220;0,0,i1
+C=3.8506,-0.2220;0,0,i0
+C=3.8506,-1.7210;0,0,i1
+C=2.5831,0.5139;0,0,i2
+C=5.1450,0.5139;0,0,i0
+C=1.2749,-4.7054;0,0,i1
+C=-1.3416,-1.7210;0,0,i0
+C=1.2749,-6.2182;0,0,i2
+C=-0.0334,-3.9559;0,0,i2
+C=7.7617,0.5139;0,0,i2
+C=-2.6226,-2.4705;0,0,i3
+C=-0.0470,-6.9405;0,0,i3
+C=-1.3416,-4.6918;0,0,i3
+C=9.0427,-0.2356;0,0,i3
+8-1=1,1
+1-14=1,0
+2-13=1,0
+2-18=1,0
+3-13=2,0
+4-15=2,0
+7-5=1,2
+5-15=1,0
+9-6=1,1
+7-8=1,0
+7-9=1,0
+8-11=1,0
+9-12=1,0
+10-11=2,0
+10-12=1,0
+10-13=1,0
+14-16=1,0
+14-17=1,0
+15-19=1,0
+16-20=1,0
+17-21=1,0
+18-22=1,0
+!End
+]]></Cell>
+<Cell id="2"><![CDATA[]]></Cell>
+<Cell id="3">5700.0</Cell>
+<Cell id="4"/>
+<Cell id="5"><![CDATA[nM]]></Cell>
+<Cell id="6"><![CDATA[=]]></Cell>
+<Cell id="7"><![CDATA[mol:CHEMBL1229]]></Cell>
+<Cell id="8">1</Cell>
+<Cell id="9">16</Cell>
+<Cell id="10">0</Cell>
+<Cell id="11"><![CDATA[CCC1CC.CCOC2C3CC4C5C6C3.CC3N5.N4.O3.O2.O16]]></Cell>
+<Cell id="12"/>
+<Cell id="13">1</Cell>
+<Cell id="14"><![CDATA[../chembl23/InfluenzaAvirusH3N2-InfluenzaAvirusH3N2-O-F-CHEMBL2366902-Functional-K.ds]]></Cell></Row></Content>
+</DataSheet>

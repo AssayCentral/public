@@ -25,7 +25,7 @@
     "kappa": 0.6678975580702798,
     "MCC": 0.6680967815228692
   },
-  "domainCompat": 0,
+  "domainCompat": 0.2679288669682165,
   "numInvalid": 0,
   "responseType": "target"
 }

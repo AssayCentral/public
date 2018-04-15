@@ -1,0 +1,31 @@
+{
+  "directory": "influenza/B",
+  "dataFN": "assay.ds",
+  "modelFN": "assay.bayesian",
+  "title": "Influenza B",
+  "tags": ["Influenza"],
+  "numActives": 111,
+  "numCompounds": 228,
+  "targetName": "Influenza B virus",
+  "organismName": "Influenza B virus",
+  "targetType": "Virus",
+  "cellName": "",
+  "assayType": "Functional",
+  "model": 
+  {
+    "ROC": 0.863940890142672,
+    "truePos": 89,
+    "trueNeg": 103,
+    "falsePos": 14,
+    "falseNeg": 22,
+    "precision": 0.8640776699029126,
+    "recall": 0.8018018018018018,
+    "specificity": 0.8803418803418803,
+    "F1": 0.8317757009345795,
+    "kappa": 0.6834066188382318,
+    "MCC": 0.6851042514452949
+  },
+  "domainCompat": 0.21008437657615697,
+  "numInvalid": 0,
+  "responseType": "target"
+}

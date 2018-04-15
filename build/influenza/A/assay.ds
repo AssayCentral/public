@@ -19,9 +19,9 @@ assayDescription=
 sourceName=ChEMBL
 sourceURI=http://www.ebi.ac.uk/rdf
 sourceVersion=23
-documentName=
-documentURI=
-measureTypeName=Ki/Kd
+documentName=Structure-based\0020drug\0020discovery\0020for\0020combating\0020influenza\0020virus\0020by\0020targeting\0020the\0020PA\2013PB1\0020interaction
+documentURI=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5573363/
+measureTypeName=MIC\002CKi/Kd
 measureTypeURI=
 unit:=http://www.bioassayontology.org/bao#BAO_0000102
 ]]></Ext>

@@ -1,0 +1,31 @@
+{
+  "directory": "influenza/A-H1N1",
+  "dataFN": "assay.ds",
+  "modelFN": "assay.bayesian",
+  "title": "Influenza A (H1N1)",
+  "tags": ["Influenza"],
+  "numActives": 144,
+  "numCompounds": 463,
+  "targetName": "Influenza A virus (H1N1)",
+  "organismName": "Influenza A virus",
+  "targetType": "Virus",
+  "cellName": "",
+  "assayType": "Functional",
+  "model": 
+  {
+    "ROC": 0.9115508244282431,
+    "truePos": 125,
+    "trueNeg": 288,
+    "falsePos": 31,
+    "falseNeg": 19,
+    "precision": 0.8012820512820513,
+    "recall": 0.8680555555555556,
+    "specificity": 0.9028213166144201,
+    "F1": 0.8333333333333334,
+    "kappa": 0.7536500234112289,
+    "MCC": 0.7549707340881195
+  },
+  "domainCompat": 0.20842036341295045,
+  "numInvalid": 0,
+  "responseType": "target"
+}
