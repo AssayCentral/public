@@ -267,6 +267,8 @@
                 </Parameter>
                 <Parameter name="responseType">target</Parameter>
                 <Parameter name="domainCompat" nodeID="22" resultName="domain"/>
+                <Parameter name="countReject" nodeID="9" resultName="rowCount"/>
+                <Parameter name="countBadmerge" nodeID="16" resultName="rowCount"/>
             </Parameters>
             <Input id="23" port="1"/>
             <Outputs count="0"/>
