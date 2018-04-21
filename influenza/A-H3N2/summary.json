@@ -2,6 +2,7 @@
   "directory": "influenza/A-H3N2",
   "dataFN": "assay.ds",
   "modelFN": "assay.bayesian",
+  "scenarioModelFN": [],
   "title": "Influenza A (H3N2)",
   "tags": ["Influenza"],
   "numActives": 12,
@@ -26,6 +27,6 @@
     "MCC": 0.6797704848608184
   },
   "domainCompat": 0.15466995424313257,
-  "numInvalid": 0,
+  "numInvalid": 3,
   "responseType": "target"
 }

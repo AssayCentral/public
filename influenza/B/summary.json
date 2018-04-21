@@ -2,6 +2,7 @@
   "directory": "influenza/B",
   "dataFN": "assay.ds",
   "modelFN": "assay.bayesian",
+  "scenarioModelFN": [],
   "title": "Influenza B",
   "tags": ["Influenza"],
   "numActives": 111,
@@ -26,6 +27,6 @@
     "MCC": 0.6851042514452949
   },
   "domainCompat": 0.21008437657615697,
-  "numInvalid": 0,
+  "numInvalid": 30,
   "responseType": "target"
 }

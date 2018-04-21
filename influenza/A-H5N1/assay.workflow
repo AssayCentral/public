@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow>
     <Meta>
-        <Description>Creation for: influenza/A-H1N1</Description>
+        <Description>Creation for: influenza/A-H5N1</Description>
     </Meta>
     <Nodes>
         <Node id="1" name="ReadSource1" op="com.mmi.work.op.io.ReadDataSheet">
             <Parameters>
-                <Parameter name="filename">../chembl23/InfluenzaAvirus_A_PR_8_34_H1N1__-InfluenzaAvirus_A_PuertoRico_8_1934_H1N1__-O-F-CHEMBL612610-Functional-K.ds</Parameter>
+                <Parameter name="filename">../chembl23/InfluenzaAvirus_H5N1_-InfluenzaAvirus_H5N1_-O-F-CHEMBL613845-Functional-K.ds</Parameter>
             </Parameters>
             <Outputs count="1"/>
         </Node>
@@ -54,7 +54,7 @@
         </Node>
         <Node id="4" name="ReadSource2" op="com.mmi.work.op.io.ReadDataSheet">
             <Parameters>
-                <Parameter name="filename">doi-10.1016-j-bmcl-2017-06-074.ds</Parameter>
+                <Parameter name="filename">doi-10.3390-molecules22030431.ds</Parameter>
             </Parameters>
             <Outputs count="1"/>
         </Node>
@@ -114,8 +114,8 @@
                     <s>2</s>
                 </Parameter>
                 <Parameter name="values">
-                    <s>../chembl23/InfluenzaAvirus_A_PR_8_34_H1N1__-InfluenzaAvirus_A_PuertoRico_8_1934_H1N1__-O-F-CHEMBL612610-Functional-K.ds</s>
-                    <s>doi-10.1016-j-bmcl-2017-06-074.ds</s>
+                    <s>../chembl23/InfluenzaAvirus_H5N1_-InfluenzaAvirus_H5N1_-O-F-CHEMBL613845-Functional-K.ds</s>
+                    <s>doi-10.3390-molecules22030431.ds</s>
                 </Parameter>
             </Parameters>
             <Input id="7" port="2"/>
@@ -144,12 +144,12 @@
                     <s>_original_row</s>
                     <s>_priority</s>
                 </Parameter>
-                <Parameter name="title">Influenza A (H1N1)</Parameter>
-                <Parameter name="description">Influenza A virus (H1N1)</Parameter>
-                <Parameter name="headerTargetName">Influenza A virus (H1N1)</Parameter>
-                <Parameter name="headerTargetURI">https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL612610</Parameter>
+                <Parameter name="title">Influenza A (H5N1)</Parameter>
+                <Parameter name="description">Influenza A virus (H5N1)</Parameter>
+                <Parameter name="headerTargetName">Influenza A virus (H5N1)</Parameter>
+                <Parameter name="headerTargetURI">https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL613845</Parameter>
                 <Parameter name="headerOrganismName">Influenza A virus</Parameter>
-                <Parameter name="headerOrganismURI">https://www.uniprot.org/taxonomy/114727</Parameter>
+                <Parameter name="headerOrganismURI">https://www.uniprot.org/taxonomy/102793</Parameter>
                 <Parameter name="headerTargetTypeName">Virus</Parameter>
                 <Parameter name="headerAssayTypeName">Functional</Parameter>
             </Parameters>
@@ -189,8 +189,8 @@
                     <s>2</s>
                 </Parameter>
                 <Parameter name="values">
-                    <s>../chembl23/InfluenzaAvirus_A_PR_8_34_H1N1__-InfluenzaAvirus_A_PuertoRico_8_1934_H1N1__-O-F-CHEMBL612610-Functional-K.ds</s>
-                    <s>doi-10.1016-j-bmcl-2017-06-074.ds</s>
+                    <s>../chembl23/InfluenzaAvirus_H5N1_-InfluenzaAvirus_H5N1_-O-F-CHEMBL613845-Functional-K.ds</s>
+                    <s>doi-10.3390-molecules22030431.ds</s>
                 </Parameter>
             </Parameters>
             <Input id="14" port="2"/>
@@ -227,9 +227,9 @@
                 <Parameter name="fingerprint">ECFP6</Parameter>
                 <Parameter name="folding">0</Parameter>
                 <Parameter name="validation">five-fold</Parameter>
-                <Parameter name="noteTitle">Influenza A (H1N1)</Parameter>
+                <Parameter name="noteTitle">Influenza A (H5N1)</Parameter>
                 <Parameter name="noteOrigin">Assay Central</Parameter>
-                <Parameter name="noteField">influenza/A-H1N1</Parameter>
+                <Parameter name="noteField">influenza/A-H5N1</Parameter>
                 <Parameter name="noteComments"/>
                 <Parameter name="thresholdValue" nodeID="19" resultName="threshold"/>
                 <Parameter name="thresholdRelation">&gt;</Parameter>
@@ -259,13 +259,14 @@
             <Parameters>
                 <Parameter name="filename">summary.json</Parameter>
                 <Parameter name="model" nodeID="20" resultName="model"/>
-                <Parameter name="directory">influenza/A-H1N1</Parameter>
+                <Parameter name="directory">influenza/A-H5N1</Parameter>
                 <Parameter name="dataFN">assay.ds</Parameter>
                 <Parameter name="modelFN">assay.bayesian</Parameter>
                 <Parameter name="tags">
                     <s>Influenza</s>
                 </Parameter>
                 <Parameter name="responseType">target</Parameter>
+                <Parameter name="scenarioModelFN"/>
                 <Parameter name="domainCompat" nodeID="22" resultName="domain"/>
                 <Parameter name="countReject" nodeID="9" resultName="rowCount"/>
                 <Parameter name="countBadmerge" nodeID="16" resultName="rowCount"/>

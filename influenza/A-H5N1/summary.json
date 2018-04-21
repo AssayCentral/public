@@ -2,6 +2,7 @@
   "directory": "influenza/A-H5N1",
   "dataFN": "assay.ds",
   "modelFN": "assay.bayesian",
+  "scenarioModelFN": [],
   "title": "Influenza A (H5N1)",
   "tags": ["Influenza"],
   "numActives": 3,

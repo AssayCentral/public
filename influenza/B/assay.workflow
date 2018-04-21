@@ -179,6 +179,7 @@
                     <s>Influenza</s>
                 </Parameter>
                 <Parameter name="responseType">target</Parameter>
+                <Parameter name="scenarioModelFN"/>
                 <Parameter name="domainCompat" nodeID="15" resultName="domain"/>
                 <Parameter name="countBadmerge" nodeID="9" resultName="rowCount"/>
             </Parameters>

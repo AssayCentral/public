@@ -26,14 +26,15 @@ measureTypeURI=
 unit:=http://www.bioassayontology.org/bao#BAO_0000102
 ]]></Ext>
 </Extension>
-<Header ncols="7">
+<Header ncols="8">
 <Column id="1" name="Molecule" type="molecule">Molecular structure of compound being measured</Column>
 <Column id="2" name="Name" type="string">Name of compound</Column>
 <Column id="3" name="Value" type="real">Measured value</Column>
 <Column id="4" name="Error" type="real">Experimental error of measurement</Column>
 <Column id="5" name="Units" type="string">Units of measurement</Column>
 <Column id="6" name="Relation" type="string">Relation: exact, greater or less</Column>
-<Column id="7" name="SourceURI" type="string">Source identifier for activity measurement</Column></Header>
+<Column id="7" name="SourceURI" type="string">Source identifier for activity measurement</Column>
+<Column id="8" name="Origin" type="string">Input file and row for each input molecule</Column></Header>
 <Content>
 <Row id="1">
 <Cell id="1"><![CDATA[SketchEl!(17,18)
@@ -79,7 +80,8 @@ O=-0.5684,-8.4425;0,0,i1
 <Cell id="4">0.9155348064462014</Cell>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1643]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1643]]></Cell>
+<Cell id="8"><![CDATA[1:4,1:8,1:12,1:16,1:20,1:24,1:28,1:32]]></Cell></Row>
 <Row id="2">
 <Cell id="1"><![CDATA[SketchEl!(11,13)
 C=-1.6304,0.9684;0,0,i0
@@ -113,7 +115,8 @@ C=-1.6304,-1.4691;0,0,i2
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL660]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL660]]></Cell>
+<Cell id="8"><![CDATA[1:37]]></Cell></Row>
 <Row id="3">
 <Cell id="1"><![CDATA[SketchEl!(17,18)
 C=-2.4942,-10.0235;0,0,i1
@@ -158,7 +161,8 @@ N=4.7129,-5.6971;0,0,i2
 <Cell id="4">0.8538719643217618</Cell>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1089302]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1089302]]></Cell>
+<Cell id="8"><![CDATA[1:1,1:3,1:5,1:7,1:9,1:11,1:13,1:15,1:17,1:19,1:21,1:23,1:25,1:27,1:29,1:31]]></Cell></Row>
 <Row id="4">
 <Cell id="1"><![CDATA[SketchEl!(17,18)
 N=-0.5214,-13.9875;0,0,i0
@@ -203,7 +207,8 @@ O=0.6138,-17.1679;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[<]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1089502]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1089502]]></Cell>
+<Cell id="8"><![CDATA[1:2,1:6,1:10,1:14,1:18,1:22,1:26,1:30]]></Cell></Row>
 <Row id="5">
 <Cell id="1"><![CDATA[SketchEl!(40,43)
 C=-2.4988,-0.2525;0,0,i0
@@ -296,7 +301,8 @@ C=-3.7788,-5.5181;0,0,i3
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL81444]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL81444]]></Cell>
+<Cell id="8"><![CDATA[1:40]]></Cell></Row>
 <Row id="6">
 <Cell id="1"><![CDATA[SketchEl!(46,49)
 C=1.5423,-16.4669;0,0,i0
@@ -401,7 +407,8 @@ C=15.7874,-14.1322;0,0,i3
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL2375868]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL2375868]]></Cell>
+<Cell id="8"><![CDATA[1:35]]></Cell></Row>
 <Row id="7">
 <Cell id="1"><![CDATA[SketchEl!(58,61)
 C=-3.1605,-13.0147;0,0,i0
@@ -530,7 +537,8 @@ O=6.4653,-15.7570;0,0,i0
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL2375364]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL2375364]]></Cell>
+<Cell id="8"><![CDATA[1:38]]></Cell></Row>
 <Row id="8">
 <Cell id="1"><![CDATA[SketchEl!(38,41)
 O=-1.9485,1.8751;0,0,i1
@@ -619,7 +627,8 @@ C=3.2476,4.8749;0,0,i3
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL51483]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL51483]]></Cell>
+<Cell id="8"><![CDATA[1:41]]></Cell></Row>
 <Row id="9">
 <Cell id="1"><![CDATA[SketchEl!(56,59)
 C=1.8937,-0.8100;0,0,i3
@@ -744,7 +753,8 @@ C=-0.0242,-5.6701;0,0,i3
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL447686]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL447686]]></Cell>
+<Cell id="8"><![CDATA[1:39]]></Cell></Row>
 <Row id="10">
 <Cell id="1"><![CDATA[SketchEl!(44,47)
 C=4.4259,-2.8492;0,0,i0
@@ -845,7 +855,8 @@ C=14.8110,-2.8492;0,0,i3
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL109986]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL109986]]></Cell>
+<Cell id="8"><![CDATA[1:36]]></Cell></Row>
 <Row id="11">
 <Cell id="1"><![CDATA[SketchEl!(24,24)
 C=4.4749,-8.7105;0,0,i0
@@ -903,7 +914,8 @@ H=4.4749,-7.2034;0,0,i0
 <Cell id="4">2.444795589531765</Cell>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL222813]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL222813]]></Cell>
+<Cell id="8"><![CDATA[1:33,1:47,1:48]]></Cell></Row>
 <Row id="12">
 <Cell id="1"><![CDATA[SketchEl!(36,37)
 C=-0.0750,-7.4839;0,0,i0
@@ -986,7 +998,8 @@ N=-5.2855,-10.4417;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1164463]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1164463]]></Cell>
+<Cell id="8"><![CDATA[1:44]]></Cell></Row>
 <Row id="13">
 <Cell id="1"><![CDATA[SketchEl!(35,36)
 C=10.3432,1.4920;0,0,i0
@@ -1067,7 +1080,8 @@ N=5.1319,-1.4661;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1165529]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1165529]]></Cell>
+<Cell id="8"><![CDATA[1:45]]></Cell></Row>
 <Row id="14">
 <Cell id="1"><![CDATA[SketchEl!(35,36)
 C=13.5413,-7.3339;0,0,i0
@@ -1148,7 +1162,8 @@ N=8.3311,-10.2916;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1164661]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1164661]]></Cell>
+<Cell id="8"><![CDATA[1:43]]></Cell></Row>
 <Row id="15">
 <Cell id="1"><![CDATA[SketchEl!(30,30)
 C=1.8153,1.1999;0,0,i0
@@ -1218,7 +1233,8 @@ O=4.3561,-1.8806;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1164186]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1164186]]></Cell>
+<Cell id="8"><![CDATA[1:46]]></Cell></Row>
 <Row id="16">
 <Cell id="1"><![CDATA[SketchEl!(35,36)
 C=26.1620,-5.9772;0,0,i0
@@ -1299,7 +1315,8 @@ N=20.9516,-8.9348;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL1164662]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL1164662]]></Cell>
+<Cell id="8"><![CDATA[1:42]]></Cell></Row>
 <Row id="17">
 <Cell id="1"><![CDATA[SketchEl!(25,25)
 C=13.0265,-7.0469;0,0,i0
@@ -1359,7 +1376,8 @@ O=10.0229,-7.0499;0,0,i1
 <Cell id="4"/>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[mol:CHEMBL466246]]></Cell></Row>
+<Cell id="7"><![CDATA[mol:CHEMBL466246]]></Cell>
+<Cell id="8"><![CDATA[1:34]]></Cell></Row>
 <Row id="18">
 <Cell id="1"><![CDATA[SketchEl!(22,22)
 C=1.4448,9.8702;0,0,i1
@@ -1415,7 +1433,8 @@ O=0.1458,4.6202;0,0,i0
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
 <Cell id="7"><![CDATA[
-mol:CHEMBL1229]]></Cell></Row>
+mol:CHEMBL1229]]></Cell>
+<Cell id="8"><![CDATA[2:6,1:49]]></Cell></Row>
 <Row id="19">
 <Cell id="1"><![CDATA[SketchEl!(44,46)
 O=8.9133,1.3106;0,0,i1
@@ -1515,7 +1534,8 @@ C=-0.5365,-2.9606;0,0,i3
 <Cell id="4">0.03497670932871877</Cell>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[]]></Cell></Row>
+<Cell id="7"><![CDATA[]]></Cell>
+<Cell id="8"><![CDATA[2:2]]></Cell></Row>
 <Row id="20">
 <Cell id="1"><![CDATA[SketchEl!(46,48)
 O=9.7738,1.6798;0,0,i1
@@ -1619,7 +1639,8 @@ C=2.5278,-5.7397;0,0,i3
 <Cell id="4">0.03318886258146758</Cell>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[]]></Cell></Row>
+<Cell id="7"><![CDATA[]]></Cell>
+<Cell id="8"><![CDATA[2:3]]></Cell></Row>
 <Row id="21">
 <Cell id="1"><![CDATA[SketchEl!(59,62)
 O=15.0056,-1.1792;0,0,i1
@@ -1750,5 +1771,6 @@ C=11.6575,-8.7725;0,0,i3
 <Cell id="4">0.09470843997659273</Cell>
 <Cell id="5"><![CDATA[]]></Cell>
 <Cell id="6"><![CDATA[=]]></Cell>
-<Cell id="7"><![CDATA[]]></Cell></Row></Content>
+<Cell id="7"><![CDATA[]]></Cell>
+<Cell id="8"><![CDATA[2:1]]></Cell></Row></Content>
 </DataSheet>

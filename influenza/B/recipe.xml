@@ -24,7 +24,7 @@
     </Provenance>
     
     <Input src="../chembl23/InfluenzaBvirus-InfluenzaBvirus-O-F-CHEMBL613129-Functional-K.ds" skipCheck="true">
-        <Workflow src="workflow/stdclean.workflow"/>
+        <Workflow src="$BASE/workflow/stdclean.workflow"/>
     </Input>
     
     <Output>

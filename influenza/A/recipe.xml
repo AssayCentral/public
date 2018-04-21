@@ -1,14 +1,14 @@
 <Assay>
-    <Title>Influenza A (H3N2)</Title>
-    <Description>Influenza A virus (H3N2)</Description>
+    <Title>Influenza A</Title>
+    <Description>Influenza A virus</Description>
 
     <Tag>Influenza</Tag>
 
     <Provenance>
-        <TargetName>Influenza A virus (H3N2)</TargetName>
-        <TargetURI>https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL2366902</TargetURI>
+        <TargetName>Influenza A virus</TargetName>
+        <TargetURI>https://www.ebi.ac.uk/chembl/target/inspect/CHEMBL613740</TargetURI>
         <OrganismName>Influenza A virus</OrganismName>
-        <OrganismURI>https://www.uniprot.org/taxonomy/119210</OrganismURI>
+        <OrganismURI>https://www.uniprot.org/taxonomy/197911</OrganismURI>
         <TargetTypeName>Virus</TargetTypeName>
         <TargetTypeURI></TargetTypeURI>
         <CellName></CellName>
@@ -23,11 +23,11 @@
         <DocumentURI></DocumentURI>
     </Provenance>
     
-    <Input src="../chembl23/InfluenzaAvirusH3N2-InfluenzaAvirusH3N2-O-F-CHEMBL2366902-Functional-K.ds" skipCheck="true">
-        <Workflow src="workflow/stdclean.workflow"/>
+    <Input src="../chembl23/InfluenzaAvirus-InfluenzaAvirus-O-F-CHEMBL613740-Functional-K.ds" skipCheck="true">
+        <Workflow src="$BASE/workflow/stdclean.workflow"/>
     </Input>
-    <Input src="doi-10.1016-j-bmcl-2017-06-074.ds">
-        <Workflow src="workflow/stdclean.workflow"/>
+    <Input src="doi-10.1038-s41598-017-10021-w.ds">
+        <Workflow src="$BASE/workflow/stdclean.workflow"/>
     </Input>
 
     <Output>
