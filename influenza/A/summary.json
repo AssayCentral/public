@@ -5,8 +5,8 @@
   "scenarioModelFN": [],
   "title": "Influenza A",
   "tags": ["Influenza"],
-  "numActives": 401,
-  "numCompounds": 821,
+  "numActives": 400,
+  "numCompounds": 820,
   "targetName": "Influenza A virus",
   "organismName": "Influenza A virus",
   "targetType": "Virus",
@@ -14,19 +14,19 @@
   "assayType": "Functional",
   "model": 
   {
-    "ROC": 0.881840072045442,
-    "truePos": 328,
+    "ROC": 0.8833780132163085,
+    "truePos": 327,
     "trueNeg": 357,
     "falsePos": 63,
     "falseNeg": 73,
-    "precision": 0.8388746803069054,
-    "recall": 0.8179551122194514,
+    "precision": 0.8384615384615385,
+    "recall": 0.8175,
     "specificity": 0.85,
-    "F1": 0.8282828282828284,
-    "kappa": 0.6683320956482994,
-    "MCC": 0.668530927140502
+    "F1": 0.8278481012658229,
+    "kappa": 0.6678975580702798,
+    "MCC": 0.6680967815228692
   },
-  "domainCompat": 0.26742455846813373,
+  "domainCompat": 0.2679288669682165,
   "numInvalid": 553,
   "responseType": "target"
 }

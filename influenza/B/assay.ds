@@ -25,6 +25,17 @@ measureTypeName=Ki/Kd
 measureTypeURI=
 unit:=http://www.bioassayontology.org/bao#BAO_0000102
 ]]></Ext>
+<Ext type="org.mmi.aspect.BayesianSource" name="BayesianSource"><![CDATA[model:
+colNameMolecule=Molecule
+colNameValue=Value
+thresholdValue=4.68428
+thresholdRelation=>
+folding=0
+noteField=
+noteTitle=
+noteOrigin=
+noteComment=
+]]></Ext>
 </Extension>
 <Header ncols="8">
 <Column id="1" name="Molecule" type="molecule">Molecular structure of compound being measured</Column>

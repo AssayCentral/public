@@ -208,19 +208,11 @@
             <Input id="14" port="1"/>
             <Outputs count="5"/>
         </Node>
-        <Node id="18" name="WriteOutput" op="com.mmi.work.op.io.WriteDataSheet">
-            <Parameters>
-                <Parameter name="filename">assay.ds</Parameter>
-                <Parameter name="autoDelete">false</Parameter>
-            </Parameters>
+        <Node id="18" name="CalculateThreshold" op="com.mmi.work.op.model.EstimateThreshold">
             <Input id="17" port="1"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="19" name="CalculateThreshold" op="com.mmi.work.op.model.EstimateThreshold">
-            <Input id="17" port="2"/>
-            <Outputs count="0"/>
-        </Node>
-        <Node id="20" name="BuildModel" op="com.mmi.work.op.model.BuildBayesian">
+        <Node id="19" name="BuildModel" op="com.mmi.work.op.model.BuildBayesian">
             <Parameters>
                 <Parameter name="molecule">Molecule</Parameter>
                 <Parameter name="response">Value</Parameter>
@@ -231,34 +223,50 @@
                 <Parameter name="noteOrigin">Assay Central</Parameter>
                 <Parameter name="noteField">influenza/A</Parameter>
                 <Parameter name="noteComments"/>
-                <Parameter name="thresholdValue" nodeID="19" resultName="threshold"/>
+                <Parameter name="thresholdValue" nodeID="18" resultName="threshold"/>
+                <Parameter name="thresholdRelation">&gt;</Parameter>
+            </Parameters>
+            <Input id="17" port="2"/>
+            <Outputs count="0"/>
+        </Node>
+        <Node id="20" name="SaveModel" op="com.mmi.work.op.model.SaveBayesian">
+            <Parameters>
+                <Parameter name="filename">assay.bayesian</Parameter>
+                <Parameter name="model" nodeID="19" resultName="model"/>
+            </Parameters>
+            <Outputs count="0"/>
+        </Node>
+        <Node id="21" name="BayesianSource" op="com.mmi.assaycentral.build.op.DeriveBayesianSource">
+            <Parameters>
+                <Parameter name="thresholdValue" nodeID="18" resultName="threshold"/>
                 <Parameter name="thresholdRelation">&gt;</Parameter>
             </Parameters>
             <Input id="17" port="3"/>
-            <Outputs count="0"/>
+            <Outputs count="1"/>
         </Node>
-        <Node id="21" name="SaveModel" op="com.mmi.work.op.model.SaveBayesian">
+        <Node id="22" name="WriteOutput" op="com.mmi.work.op.io.WriteDataSheet">
             <Parameters>
-                <Parameter name="filename">assay.bayesian</Parameter>
-                <Parameter name="model" nodeID="20" resultName="model"/>
+                <Parameter name="filename">assay.ds</Parameter>
+                <Parameter name="autoDelete">false</Parameter>
             </Parameters>
+            <Input id="21" port="1"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="22" name="DomainApplicability" op="com.mmi.assaycentral.build.op.CalculateDomainApplicability">
+        <Node id="23" name="DomainApplicability" op="com.mmi.assaycentral.build.op.CalculateDomainApplicability">
             <Parameters>
                 <Parameter name="filename">../../domain.ecfp</Parameter>
             </Parameters>
             <Input id="17" port="4"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="23" name="DiscardRows" op="com.mmi.work.op.io.Sink">
+        <Node id="24" name="DiscardRows" op="com.mmi.work.op.io.Sink">
             <Input id="17" port="5"/>
             <Outputs count="1"/>
         </Node>
-        <Node id="24" name="WriteSummary" op="com.mmi.assaycentral.build.op.CaptureBrochureSummary">
+        <Node id="25" name="WriteSummary" op="com.mmi.assaycentral.build.op.CaptureBrochureSummary">
             <Parameters>
                 <Parameter name="filename">summary.json</Parameter>
-                <Parameter name="model" nodeID="20" resultName="model"/>
+                <Parameter name="model" nodeID="19" resultName="model"/>
                 <Parameter name="directory">influenza/A</Parameter>
                 <Parameter name="dataFN">assay.ds</Parameter>
                 <Parameter name="modelFN">assay.bayesian</Parameter>
@@ -267,11 +275,11 @@
                 </Parameter>
                 <Parameter name="responseType">target</Parameter>
                 <Parameter name="scenarioModelFN"/>
-                <Parameter name="domainCompat" nodeID="22" resultName="domain"/>
+                <Parameter name="domainCompat" nodeID="23" resultName="domain"/>
                 <Parameter name="countReject" nodeID="9" resultName="rowCount"/>
                 <Parameter name="countBadmerge" nodeID="16" resultName="rowCount"/>
             </Parameters>
-            <Input id="23" port="1"/>
+            <Input id="24" port="1"/>
             <Outputs count="0"/>
         </Node>
     </Nodes>

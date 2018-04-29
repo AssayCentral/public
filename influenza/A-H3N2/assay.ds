@@ -19,11 +19,22 @@ assayDescription=
 sourceName=ChEMBL
 sourceURI=http://www.ebi.ac.uk/rdf
 sourceVersion=23
-documentName=
-documentURI=
+documentName=Structure-based\0020optimization\0020and\0020synthesis\0020of\0020antiviral\0020drug\0020Arbidol\0020analogues\0020with\0020significantly\0020improved\0020affinity\0020to\0020influenza\0020hemagglutinin
+documentURI=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5575851/
 measureTypeName=Ki/Kd
 measureTypeURI=
 unit:=http://www.bioassayontology.org/bao#BAO_0000102
+]]></Ext>
+<Ext type="org.mmi.aspect.BayesianSource" name="BayesianSource"><![CDATA[model:
+colNameMolecule=Molecule
+colNameValue=Value
+thresholdValue=5.64621
+thresholdRelation=>
+folding=0
+noteField=
+noteTitle=
+noteOrigin=
+noteComment=
 ]]></Ext>
 </Extension>
 <Header ncols="8">
