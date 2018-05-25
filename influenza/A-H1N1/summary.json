@@ -6,7 +6,7 @@
   "title": "Influenza A (H1N1)",
   "tags": ["Influenza"],
   "numActives": 142,
-  "numCompounds": 461,
+  "numCompounds": 462,
   "targetName": "Influenza A virus (H1N1)",
   "organismName": "Influenza A virus",
   "targetType": "Virus",
@@ -14,19 +14,19 @@
   "assayType": "Functional",
   "model": 
   {
-    "ROC": 0.9128879587052019,
+    "ROC": 0.9149427854101795,
     "truePos": 123,
-    "trueNeg": 288,
-    "falsePos": 31,
+    "trueNeg": 287,
+    "falsePos": 33,
     "falseNeg": 19,
-    "precision": 0.7987012987012987,
+    "precision": 0.7884615384615384,
     "recall": 0.8661971830985915,
-    "specificity": 0.9028213166144201,
-    "F1": 0.8310810810810811,
-    "kappa": 0.7514020707506471,
-    "MCC": 0.7527430475510927
+    "specificity": 0.896875,
+    "F1": 0.825503355704698,
+    "kappa": 0.7427065929829072,
+    "MCC": 0.7444949754649484
   },
-  "domainCompat": 0.2085284104947125,
+  "domainCompat": 0.208474612110519,
   "numInvalid": 40,
   "responseType": "target"
 }
