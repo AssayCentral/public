@@ -27,6 +27,16 @@
     "MCC": 0.6680967815228692
   },
   "domainCompat": 0.2679288669682165,
-  "numInvalid": 553,
-  "responseType": "target"
+  "numInvalid": 549,
+  "responseType": "target",
+  "randomForest": 
+  {
+    "filename": "assay.randomforest",
+    "maxDepth": 25,
+    "bagSize": 100,
+    "featureSize": 393,
+    "numTrees": 1000,
+    "RMS": 0.9003478250646021,
+    "R2": 0.38761410956686104
+  }
 }

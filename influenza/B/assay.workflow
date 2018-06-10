@@ -117,15 +117,26 @@
             <Input id="8" port="1"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="10" name="MultiplexOutput" op="com.mmi.work.op.blk.Multiplex">
+        <Node id="10" name="MultiplexEstimator" op="com.mmi.work.op.blk.Multiplex">
             <Input id="7" port="1"/>
-            <Outputs count="5"/>
+            <Outputs count="2"/>
         </Node>
         <Node id="11" name="CalculateThreshold" op="com.mmi.work.op.model.EstimateThreshold">
             <Input id="10" port="1"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="12" name="BuildModel" op="com.mmi.work.op.model.BuildBayesian">
+        <Node id="12" name="BufferOutput" op="com.mmi.work.op.blk.Buffer">
+            <Input id="10" port="2"/>
+            <Outputs count="1"/>
+        </Node>
+        <Node id="13" name="MultiplexOutput" op="com.mmi.work.op.blk.Multiplex">
+            <Dependencies>
+                <Dependency nodeID="11"/>
+            </Dependencies>
+            <Input id="12" port="1"/>
+            <Outputs count="5"/>
+        </Node>
+        <Node id="14" name="BuildModel" op="com.mmi.work.op.model.BuildBayesian">
             <Parameters>
                 <Parameter name="molecule">Molecule</Parameter>
                 <Parameter name="response">Value</Parameter>
@@ -139,47 +150,69 @@
                 <Parameter name="thresholdValue" nodeID="11" resultName="threshold"/>
                 <Parameter name="thresholdRelation">&gt;</Parameter>
             </Parameters>
-            <Input id="10" port="2"/>
+            <Input id="13" port="1"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="13" name="SaveModel" op="com.mmi.work.op.model.SaveBayesian">
+        <Node id="15" name="SaveModel" op="com.mmi.work.op.model.SaveBayesian">
             <Parameters>
                 <Parameter name="filename">assay.bayesian</Parameter>
-                <Parameter name="model" nodeID="12" resultName="model"/>
+                <Parameter name="model" nodeID="14" resultName="model"/>
             </Parameters>
             <Outputs count="0"/>
         </Node>
-        <Node id="14" name="BayesianSource" op="com.mmi.assaycentral.build.op.DeriveBayesianSource">
+        <Node id="16" name="BuildRandomForest" op="com.mmi.work.op.model.BuildRandomForest">
+            <Parameters>
+                <Parameter name="molecule">Molecule</Parameter>
+                <Parameter name="response">Value</Parameter>
+                <Parameter name="fingerprint">ECFP6</Parameter>
+                <Parameter name="folding">0</Parameter>
+                <Parameter name="validation">true</Parameter>
+                <Parameter name="noteTitle">Influenza B</Parameter>
+                <Parameter name="noteOrigin">Assay Central</Parameter>
+                <Parameter name="noteField">influenza/B</Parameter>
+                <Parameter name="noteComments"/>
+            </Parameters>
+            <Input id="13" port="2"/>
+            <Outputs count="0"/>
+        </Node>
+        <Node id="17" name="SaveRandomForest" op="com.mmi.work.op.model.SaveRandomForest">
+            <Parameters>
+                <Parameter name="filename">assay.randomforest</Parameter>
+                <Parameter name="model" nodeID="16" resultName="model"/>
+            </Parameters>
+            <Outputs count="0"/>
+        </Node>
+        <Node id="18" name="BayesianSource" op="com.mmi.assaycentral.build.op.DeriveBayesianSource">
             <Parameters>
                 <Parameter name="thresholdValue" nodeID="11" resultName="threshold"/>
                 <Parameter name="thresholdRelation">&gt;</Parameter>
             </Parameters>
-            <Input id="10" port="3"/>
+            <Input id="13" port="3"/>
             <Outputs count="1"/>
         </Node>
-        <Node id="15" name="WriteOutput" op="com.mmi.work.op.io.WriteDataSheet">
+        <Node id="19" name="WriteOutput" op="com.mmi.work.op.io.WriteDataSheet">
             <Parameters>
                 <Parameter name="filename">assay.ds</Parameter>
                 <Parameter name="autoDelete">false</Parameter>
             </Parameters>
-            <Input id="14" port="1"/>
+            <Input id="18" port="1"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="16" name="DomainApplicability" op="com.mmi.assaycentral.build.op.CalculateDomainApplicability">
+        <Node id="20" name="DomainApplicability" op="com.mmi.assaycentral.build.op.CalculateDomainApplicability">
             <Parameters>
                 <Parameter name="filename">../../domain.ecfp</Parameter>
             </Parameters>
-            <Input id="10" port="4"/>
+            <Input id="13" port="4"/>
             <Outputs count="0"/>
         </Node>
-        <Node id="17" name="DiscardRows" op="com.mmi.work.op.io.Sink">
-            <Input id="10" port="5"/>
+        <Node id="21" name="DiscardRows" op="com.mmi.work.op.io.Sink">
+            <Input id="13" port="5"/>
             <Outputs count="1"/>
         </Node>
-        <Node id="18" name="WriteSummary" op="com.mmi.assaycentral.build.op.CaptureBrochureSummary">
+        <Node id="22" name="WriteSummary" op="com.mmi.assaycentral.build.op.CaptureBrochureSummary">
             <Parameters>
                 <Parameter name="filename">summary.json</Parameter>
-                <Parameter name="model" nodeID="12" resultName="model"/>
+                <Parameter name="model" nodeID="14" resultName="model"/>
                 <Parameter name="directory">influenza/B</Parameter>
                 <Parameter name="dataFN">assay.ds</Parameter>
                 <Parameter name="modelFN">assay.bayesian</Parameter>
@@ -188,10 +221,12 @@
                 </Parameter>
                 <Parameter name="responseType">target</Parameter>
                 <Parameter name="scenarioModelFN"/>
-                <Parameter name="domainCompat" nodeID="16" resultName="domain"/>
+                <Parameter name="domainCompat" nodeID="20" resultName="domain"/>
                 <Parameter name="countBadmerge" nodeID="9" resultName="rowCount"/>
+                <Parameter name="randomForestFN">assay.randomforest</Parameter>
+                <Parameter name="randomForestModel" nodeID="16" resultName="model"/>
             </Parameters>
-            <Input id="17" port="1"/>
+            <Input id="21" port="1"/>
             <Outputs count="0"/>
         </Node>
     </Nodes>

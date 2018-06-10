@@ -32,6 +32,7 @@
 
     <Output>
         <Threshold/>
+        <RandomForest/>
         <ResponseType>target</ResponseType>
     </Output>
     

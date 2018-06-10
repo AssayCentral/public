@@ -28,5 +28,15 @@
   },
   "domainCompat": 0.15466995424313257,
   "numInvalid": 3,
-  "responseType": "target"
+  "responseType": "target",
+  "randomForest": 
+  {
+    "filename": "assay.randomforest",
+    "maxDepth": 25,
+    "bagSize": 33,
+    "featureSize": 66,
+    "numTrees": 1000,
+    "RMS": 1.0902104443477716,
+    "R2": 0.15282121214501898
+  }
 }
