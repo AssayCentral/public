@@ -167,6 +167,9 @@
             <Parameters>
                 <Parameter name="columns">
                     <s>HeavyHash</s>
+                    <s>_priority</s>
+                    <s>_original_src</s>
+                    <s>_original_row</s>
                 </Parameter>
             </Parameters>
             <Input id="12" port="1"/>
@@ -303,6 +306,7 @@
                 <Parameter name="directory">influenza/A-H3N2</Parameter>
                 <Parameter name="dataFN">assay.ds</Parameter>
                 <Parameter name="modelFN">assay.bayesian</Parameter>
+                <Parameter name="workflowFN">assay.workflow</Parameter>
                 <Parameter name="tags">
                     <s>Influenza</s>
                 </Parameter>

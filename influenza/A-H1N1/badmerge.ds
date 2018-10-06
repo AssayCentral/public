@@ -19,13 +19,13 @@ assayDescription=
 sourceName=ChEMBL
 sourceURI=http://www.ebi.ac.uk/rdf
 sourceVersion=23
-documentName=
-documentURI=
-measureTypeName=Ki/Kd\002CKd
+documentName=Structure-based\0020optimization\0020and\0020synthesis\0020of\0020antiviral\0020drug\0020Arbidol\0020analogues\0020with\0020significantly\0020improved\0020affinity\0020to\0020influenza\0020hemagglutinin
+documentURI=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5575851/
+measureTypeName=Kd\002CKi/Kd
 measureTypeURI=
+unit:uM=http://purl.obolibrary.org/obo/UO_0000064
 unit:M=http://purl.obolibrary.org/obo/UO_0000062
 unit:mM=http://purl.obolibrary.org/obo/UO_0000063
-unit:uM=http://purl.obolibrary.org/obo/UO_0000064
 unit:nM=http://purl.obolibrary.org/obo/UO_0000065
 ]]></Ext>
 </Extension>

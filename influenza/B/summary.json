@@ -2,6 +2,7 @@
   "directory": "influenza/B",
   "dataFN": "assay.ds",
   "modelFN": "assay.bayesian",
+  "workflowFN": "assay.workflow",
   "scenarioModelFN": [],
   "title": "Influenza B",
   "tags": ["Influenza"],
@@ -34,9 +35,9 @@
     "filename": "assay.randomforest",
     "maxDepth": 25,
     "bagSize": 100,
-    "featureSize": 186,
-    "numTrees": 1000,
-    "RMS": 0.867573738163296,
-    "R2": 0.49179020757421466
+    "featureSize": 204,
+    "numTrees": 500,
+    "RMS": 0.8476752137768013,
+    "R2": 0.5148352901565554
   }
 }

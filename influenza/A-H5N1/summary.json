@@ -2,6 +2,7 @@
   "directory": "influenza/A-H5N1",
   "dataFN": "assay.ds",
   "modelFN": "assay.bayesian",
+  "workflowFN": "assay.workflow",
   "scenarioModelFN": [],
   "title": "Influenza A (H5N1)",
   "tags": ["Influenza"],
@@ -34,9 +35,9 @@
     "filename": "assay.randomforest",
     "maxDepth": 25,
     "bagSize": 21,
-    "featureSize": 51,
-    "numTrees": 1000,
-    "RMS": 1.0877636724035524,
-    "R2": 0.37691844586221324
+    "featureSize": 56,
+    "numTrees": 500,
+    "RMS": 1.0256048821151478,
+    "R2": 0.44609414989892693
   }
 }

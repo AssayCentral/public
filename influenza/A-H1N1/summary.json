@@ -2,6 +2,7 @@
   "directory": "influenza/A-H1N1",
   "dataFN": "assay.ds",
   "modelFN": "assay.bayesian",
+  "workflowFN": "assay.workflow",
   "scenarioModelFN": [],
   "title": "Influenza A (H1N1)",
   "tags": ["Influenza"],
@@ -14,7 +15,7 @@
   "assayType": "Functional",
   "model": 
   {
-    "ROC": 0.9128879587052019,
+    "ROC": 0.9129321106241015,
     "truePos": 123,
     "trueNeg": 288,
     "falsePos": 31,
@@ -26,7 +27,7 @@
     "kappa": 0.7514020707506471,
     "MCC": 0.7527430475510927
   },
-  "domainCompat": 0.2085284104947125,
+  "domainCompat": 0.20830797828357894,
   "numInvalid": 40,
   "responseType": "target",
   "randomForest": 
@@ -34,9 +35,9 @@
     "filename": "assay.randomforest",
     "maxDepth": 25,
     "bagSize": 100,
-    "featureSize": 277,
-    "numTrees": 1000,
-    "RMS": 0.7739845007628176,
-    "R2": 0.6216746029810228
+    "featureSize": 306,
+    "numTrees": 500,
+    "RMS": 0.7464982052272208,
+    "R2": 0.64806820508851
   }
 }
